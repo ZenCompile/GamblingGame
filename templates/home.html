@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RANDOM GAMBLING GAME</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="page-title">RANDOM GAMBLING GAME</h1>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='R.jpg') }}" alt="gambling" class="top-image">
+        <div class="bottom-images">
+            <img src="{{ url_for('static', filename='R2.jpg') }}" alt="gambling2" class="bottom-image">
+            <img src="{{ url_for('static', filename='R3.jpg') }}" alt="gambling2" class="bottom-image">
+        </div>
+    </div>
+    
+    <div class="bottom-bar">
+        <a href="{{ url_for('blackjack') }}">
+        <button class="buttons">BLACKJACK</button>
+    </a>
+    <a href="{{ url_for('russian_roulette') }}">
+        <button class="buttons">RUSSIAN ROULETTE</button>
+    </a>
+    <a href="{{ url_for('plinko') }}">
+        <button class="buttons">PLINKO</button>
+    </a>
+    </div>
+</body>
+</html>
