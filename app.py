@@ -6,7 +6,7 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('/blackjack')
+@app.route('/blackjack', methods=["GET","POST"])
 def blackjack():
     return render_template("blackjack.html")
 
